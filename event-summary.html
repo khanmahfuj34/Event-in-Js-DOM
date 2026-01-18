@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Summary</title>
+</head>
+
+<body>
+    <h1>Final DOM Event Handers</h1>
+    <h3 id="handel-status">Default Text</h3>
+    <button onclick="handelOnClick()">Handel Event on Click Change</button>
+    <button id="event-listener">Handel Event by addEventlistener</button>
+    <script>
+        function handelOnClick() {
+            const handelststus = document.getElementById('handel-status');
+            handelststus.innerText = 'Text Change on Click Event Handeler ';
+        }
+        //option 2
+        document.getElementById('event-listener').addEventListener('click', function() {
+            const handelststus = document.getElementById('handel-status');
+            handelststus.innerText = 'Text Change on Click Event by addEventlistener';
+        });
+    </script>
+</body>
+
+</html>
